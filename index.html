@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <style>
+        mark{
+      background: red;
+      padding: 0;
+    }
+    </style>
     <title>Countries</title>
 </head>
 
@@ -23,7 +29,6 @@
     <div class="modal js-country-modal">
         <div class="modal-content">
           <span class="close-btn js-close" id="closeModalBtn">&times;</span>
-          <div class="loading-message js-loading-message">Yuklanmoqda...</div>
           <div class="modal-flex">
             <div><img src="" class="js-img" alt=""></div>
             <div>
@@ -52,14 +57,21 @@
       </div>
     <header>
         <h1>Where in the world?</h1>
-        <div class="dark-mode-toggle">
-            <span>🌙 Dark Mode</span>
+        <div class="js-dark-mode-toggle">
+            <span>Dark Mode</span>
         </div>
     </header>
 
     <div class="search-filter">
-        <input type="text" id="search" placeholder="Search for a country...">
-        <select id="region-filter">
+        <input type="text" id="search" class="js-filter-input" placeholder="Search for a country...">
+        <select class="js-sort-select">
+            <option value="" hidden>All</option>
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
+            <option value="lot-few">Lot-Few</option>
+            <option value="few-lot">Few-Lot</option>
+        </select>
+        <select id="region-filter" class="js-region-filter">
             <option value="" hidden>Filter by Region</option>
             <option value="">All</option>
             <option value="Africa">Africa</option>
@@ -74,7 +86,7 @@
         
 
     </main>
-
+    <div class="pagination-controls js-pagination-controls"></div>
     <script src="./javascript/utils.js"></script>
     <script src="./javascript/main.js"></script>
 </body>
