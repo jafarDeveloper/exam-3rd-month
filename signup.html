@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/signin.min.css">
+	<link rel="stylesheet" href="./css/signup.min.css">
     <title>Document</title>
 </head>
-
 <body>
-
     <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
         <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
         <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
@@ -48,43 +45,46 @@
 
             <div class="content">
 
-                <h2>Sign In</h2>
+                <h2>Sign Up</h2>
 
-            
-                    <form class="form js-form-login">
-                    <div class="inputBox " >
+                
+					<form class="js-user-add-form form">
+                    <div class="inputBox" class="js-user-add-form">
 
-                        <input type="text" class="js-login-username" > <i>Username</i>
+                        <input type="text" class="js-username-input" > <i>Username</i>
+
+                    </div>
+                    <div class="inputBox">
+
+                        <input type="text" class="js-phone-num-input"> <i>Phone number</i>
+
+                    </div>
+        
+
+                    <div class="inputBox">
+
+                        <input type="password" class="js-password-input"> <i>Password</i>
+
+                    </div>
+
+                    <div class="links"> <a href="./index.html">signin</a>
 
                     </div>
 
                     <div class="inputBox">
 
-                        <input type="password" class="js-login-password" > <i>Password</i>
+                        <input type="submit" value="SignUp">
 
                     </div>
-
-                    <div class="links"> <a href="./signup.html">Signup</a>
-
-                    </div>
-
-                    <div class="inputBox">
-
-                        <input type="submit" value="Login">
-
-                    </div>
-                </form>
+				</form>
                
 
             </div>
 
         </div>
 
-    </section> 
-
-	<script src="./javascript/utils.js"></script>
-    <script src="./javascript/login.js"></script>
-
+    </section> <!-- partial -->
+    <script src="./javascript/utils.js"></script>
+    <script src="./javascript/signup.js"></script>
 </body>
-
 </html>

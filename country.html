@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <style>
+        mark{
+      background: red;
+      padding: 0;
+    }
+    </style>
+    <title>Countries</title>
+</head>
+
+<body>
+    <template class="js-temp">
+        <div class="country-card js-country-card">
+            <img src="" class=".img js-img">
+            <h2  class="js-name">Germany</h2>
+            <div><strong>Population:</strong><p class="js-population"></p></div>
+            <div><strong>Region:</strong>  <p class="js-region"> </p></div>
+            <div><strong>Capital:</strong><p class="js-capital"></p></div>
+        </div>
+
+    </template>
+    <div class="modal js-country-modal">
+        <div class="modal-content">
+          <span class="close-btn js-close" id="closeModalBtn">&times;</span>
+          <div class="modal-flex">
+            <div><img src="" class="js-img" alt=""></div>
+            <div>
+                <h2 class="js-name" >name</h2>
+                <div class="informations"     >
+                    <div class="info">
+                        <div><strong>Native name:</strong><p class="js-native"></p></div>
+                        <div><strong>Population:</strong><p class="js-population"></p></div>
+                        <div><strong>Region:</strong>  <p class="js-region"> </p></div>
+                        <div><strong>Sub Region:</strong>  <p class="js-subregion"> </p></div>
+                        <div><strong>Capital:</strong><p class="js-capital"></p></div>
+                    </div>
+                    <div class="info">
+                        <div><strong>Top Level Domain:</strong><p class="js-domain"></p></div> 
+                        <div><strong>Currencies</strong>  <p class="js-currency"> </p></div>
+                        <div><strong>Languages:</strong>  <p class="js-language"> </p></div>                      
+                    </div>
+                </div>
+                <div class="border">
+                    <strong>Border Countries:</strong> <p class="js-borders"></p>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    <header>
+        <h1>Where in the world?</h1>
+        <div class="js-dark-mode-toggle">
+            <span>Dark Mode</span>
+        </div>
+    </header>
+
+    <div class="search-filter">
+        <input type="text" id="search" class="js-filter-input" placeholder="Search for a country...">
+        <select class="js-sort-select">
+            <option value="" hidden>All</option>
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
+            <option value="lot-few">Lot-Few</option>
+            <option value="few-lot">Few-Lot</option>
+        </select>
+        <select id="region-filter" class="js-region-filter">
+            <option value="" hidden>Filter by Region</option>
+            <option value="">All</option>
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+    </div>
+
+    <main class="country-list js-country-list">
+        
+
+    </main>
+    <div class="pagination-controls js-pagination-controls"></div>
+    <script src="./javascript/utils.js"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>

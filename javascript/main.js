@@ -206,3 +206,7 @@ if (localStorage.getItem("darkMode") === "enabled") {
     document.body.classList.add("dark-mode");
     darkModeToggle.textContent = "Light Mode";
 }
+
+if (localStorage.getItem("acc") === "false") {
+    window.location.pathname = "/index.html";
+}
